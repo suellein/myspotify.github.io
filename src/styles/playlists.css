@@ -6,9 +6,122 @@
     background-color: #121212;
   }
 
-.result-playlists .playlist {
-    color: #ffffff;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 48px;
+.playlist {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
   }
+
+.playlist #greeting {
+  color: var(--text-base-light);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.playlist .session {
+  color: var(--text-base-light);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* SCROLL START*/
+
+.offer__scroll-container {
+  max-height: 43vh;
+  margin: 24px;
+  overflow-y: auto;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+  width: 1px;
+}
+
+.offer__scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* SCROLL END*/
+
+.offer__list-item {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.cards {
+  position: relative;
+  width: 220px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.cards span {
+  padding: 16px;
+  position: absolute;
+  color: var(--text-base-light);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* CARD'S COLORS */
+.card-01 {
+  background-color: rgb(0, 100, 80);
+}
+.card-02 {
+  background-color: rgb(132, 0, 231);
+}
+.card-03 {
+  background: rgb(30, 50, 100);
+}
+.card-04 {
+  background: rgb(140, 25, 50);
+}
+.card-05 {
+  background: rgb(232, 17, 91);
+}
+.card-06 {
+  background: rgb(83, 122, 161);
+}
+.card-07 {
+  background: rgb(142, 102, 172);
+}
+.card-08 {
+  background: rgb(20, 138, 8);
+}
+.card-09 {
+  background: rgb(30, 50, 100);
+}
+.card-10 {
+  background: rgb(233, 20, 41);
+}
+.card-11 {
+  background: rgb(80, 55, 80);
+}
+.card-12 {
+  background: rgb(216, 64, 0);
+}
+.card-13 {
+  background: rgb(186, 93, 7);
+}
+.card-14 {
+  background: rgb(0, 30, 80);
+}
+.card-15 {
+  background: rgb(60, 30, 80);
+}
+
+.offer__list-item img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 107px;
+  transform: rotate(25deg) translate(18%, -2%);
+}
+
+/* CARD ARTIST */
